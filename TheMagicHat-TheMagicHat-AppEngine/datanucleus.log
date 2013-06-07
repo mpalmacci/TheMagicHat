@@ -1,0 +1,5 @@
+22:54:34,262 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer for API "JDO"
+22:54:34,558 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.1.1) : Enhancement of classes
+22:54:34,948 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/mpalmacci/Documents/workspace/TheMagicHat/TheMagicHat-TheMagicHat-AppEngine/target/TheMagicHat-TheMagicHat-AppEngine-1.0/WEB-INF/classes/com/themagichat/DeviceInfo.class" with enhanced definition
+22:54:34,955 (main) INFO  [DataNucleus.Enhancer] - Writing class file "/Users/mpalmacci/Documents/workspace/TheMagicHat/TheMagicHat-TheMagicHat-AppEngine/target/TheMagicHat-TheMagicHat-AppEngine-1.0/WEB-INF/classes/com/themagichat/MessageData.class" with enhanced definition
+22:54:34,955 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 2 classes. Timings : input=325 ms, enhance=71 ms, total=396 ms. Consult the log for full details

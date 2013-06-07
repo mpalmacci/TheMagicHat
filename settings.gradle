@@ -1,1 +1,1 @@
-include ':TheMagicHat'
+include ':TheMagicHat', ':TheMagicHat-TheMagicHat-AppEngine', ':TheMagicHat-TheMagicHat-gcmlib'

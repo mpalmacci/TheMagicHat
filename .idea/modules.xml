@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/TheMagicHat.iml" filepath="$PROJECT_DIR$/TheMagicHat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TheMagicHat-TheMagicHat.iml" filepath="$PROJECT_DIR$/TheMagicHat-TheMagicHat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TheMainHat.iml" filepath="$PROJECT_DIR$/TheMainHat.iml" />
+    </modules>
+  </component>
+</project>
+

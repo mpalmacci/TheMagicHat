@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          android:versionCode="2"
+          android:versionName="2.0"
+          package="com.themagichat">
+
+    <uses-permission android:name="com.themagichat.permission.C2D_MESSAGE"/>
+
+    <uses-sdk
+            android:minSdkVersion="10"
+            android:targetSdkVersion="16"/>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- App receives GCM messages. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <!-- GCM connects to Google Services. -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <!-- Permissions to write to external SD Card -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <permission android:name="com.themagichat.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+
+    <application
+            android:allowBackup="true"
+            android:icon="@drawable/main_icon"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+
+        <activity
+                android:label="@string/app_name"
+                android:name="com.themagichat.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:configChanges="orientation|keyboardHidden"
+                android:label="@string/app_name"
+                android:name="com.themagichat.MagicHatHome"
+                android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.themagichat.MAGICHATHOME"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:configChanges="orientation|keyboardHidden"
+                android:label="@string/app_name"
+                android:name="com.themagichat.prefs.MagicHatPrefs"
+                android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.themagichat.MAGICHATPREFS"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:configChanges="orientation|keyboardHidden"
+                android:label="@string/app_name"
+                android:name="com.themagichat.decks.games.PlayGame"
+                android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.themagichat.decks.games.PLAYGAME"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:configChanges="orientation|keyboardHidden"
+                android:label="@string/app_name"
+                android:name="com.themagichat.decks.games.GameStatsForDeck"
+                android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.themagichat.decks.games.GAMESTATSFORDECK"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:configChanges="orientation|keyboardHidden"
+                android:label="@string/app_name"
+                android:name="com.themagichat.decks.games.GameStatsForPlayer"
+                android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.themagichat.decks.games.GAMESTATSFORPLAYER"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:configChanges="orientation|keyboardHidden"
+                android:label="@string/decks"
+                android:name="com.themagichat.decks.DecksMain"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="com.themagichat.decks.DECKSMAIN"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:configChanges="orientation|keyboardHidden"
+                android:label="@string/decks"
+                android:name="com.themagichat.decks.DeckView"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="com.themagichat.decks.DECKVIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:configChanges="orientation|keyboardHidden"
+                android:label="@string/decks"
+                android:name="com.themagichat.decks.DeckEdit"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="com.themagichat.decks.DECKEDIT"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:configChanges="orientation|keyboardHidden"
+                android:label="@string/app_name"
+                android:name="com.themagichat.cards.CardSearch"
+                android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.themagichat.cards.CARDSEARCH"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:configChanges="orientation|keyboardHidden"
+                android:label="@string/app_name"
+                android:name="com.themagichat.cards.CardSearchResults"
+                android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.themagichat.cards.CARDSEARCHRESULTS"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:configChanges="orientation|keyboardHidden"
+                android:label="@string/app_name"
+                android:name="com.themagichat.cards.CardView"
+                android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.themagichat.cards.CARDVIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:configChanges="orientation|keyboardHidden"
+                android:label="@string/app_name"
+                android:name="com.themagichat.players.PlayersMain"
+                android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.themagichat.players.PLAYERSMAIN"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:configChanges="orientation|keyboardHidden"
+                android:label="@string/app_name"
+                android:name="com.themagichat.players.PlayerView"
+                android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.themagichat.players.PLAYERVIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

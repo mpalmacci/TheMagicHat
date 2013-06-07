@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="decks_or_players">
+        <item>Decks</item>
+        <item>Players</item>
+    </string-array>
+    <string-array name="card_types">
+        <item>Any</item>
+        <item>Artifact</item>
+        <item>Creature</item>
+        <item>Enchantment</item>
+        <item>Instant</item>
+        <item>Land</item>
+        <item>Plane</item>
+        <item>Planeswalker</item>
+        <item>Scheme</item>
+        <item>Sorcery</item>
+    </string-array>
+    <string-array name="blocks">
+        <item>Any</item>
+        <item>Core Sets</item>
+        <item>Ice Age</item>
+        <item>Innistrad</item>
+        <item>Invasion</item>
+        <item>Kamigawa</item>
+        <item>Lorwyn-Shadowmoor</item>
+        <item>Masques</item>
+        <item>Mirage</item>
+        <item>Mirrodin</item>
+        <item>Odyssey</item>
+        <item>Onslaught</item>
+        <item>Ravnica</item>
+        <item>Return to Ravnica</item>
+        <item>Scars of Mirrodin</item>
+        <item>Shards of Alara</item>
+        <item>Tempest</item>
+        <item>Time Spiral</item>
+        <item>Urza</item>
+        <item>Zendikar</item>
+    </string-array>
+    <string-array name="equality">
+        <item>=</item>
+        <item>&gt;</item>
+        <item>&lt;</item>
+        <item>=&gt;</item>
+        <item>=&lt;</item>
+    </string-array>
+
+</resources>

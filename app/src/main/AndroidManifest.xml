@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.palmak.themagichat" >
+    <!-- <uses-sdk android:minSdkVersion="21" /> -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Material" >
+        <activity
+            android:name=".DashboardActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".decks.DeckMainViewActivity"
+            android:parentActivityName=".DashboardActivity" >
+            <intent-filter>
+                <action android:name="com.palmak.themagichat.decks.DECKMAINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".decks.DeckEditActivity"
+            android:parentActivityName=".decks.DeckMainViewActivity" >
+            <intent-filter>
+                <action android:name="com.palmak.themagichat.decks.DECKEDITACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".decks.DeckListFragment" >
+
+    <item android:id="@+id/action_deck_search"
+        android:icon="@drawable/ic_search_black_48dp"
+        android:title="@string/deck_search"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom|collapseActionView"
+        android:actionViewClass="android.widget.SearchView" />
+
+    <item android:id="@+id/action_deck_list_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:title="@string/filter_by"
+        android:orderInCategory="150"
+        android:showAsAction="never"/>
+
+    <item android:id="@+id/action_deck_list_sort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:title="@string/sort_by"
+        android:orderInCategory="200"
+        android:showAsAction="never"/>
+
+</menu>

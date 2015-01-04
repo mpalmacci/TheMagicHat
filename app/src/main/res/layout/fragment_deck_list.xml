@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".decks.DeckMainViewActivity">
+
+    <!-- Search is built into the action bar
+    <EditText
+        android:id="@+id/etDeckSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_action_search_dark"
+        android:hint="@string/deck_search"
+        android:inputType="textCapWords" /> -->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvDeckList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        tools:context=".decks.DeckMainViewActivity"
+        tools:listitem="@layout/fragment_deck_list_item"/>
+
+    <ImageButton
+        android:id="@+id/action_add_deck"
+        android:layout_width="@dimen/floating_button_size"
+        android:layout_height="@dimen/floating_button_size"
+        android:text="@string/action_new_deck"
+        android:background="@drawable/oval"
+        android:elevation="5dp"
+        android:contentDescription="@string/action_add_deck"
+        android:layout_margin="@dimen/floating_button_buffer"
+        android:src="@drawable/ic_add_white_24dp"
+        android:stateListAnimator="@anim/button_elevation"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
